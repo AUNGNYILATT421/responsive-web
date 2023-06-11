@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2dba46e286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="max-h-screen" style="font-family:'Roboto', sans-serif;">
+    <div class="h-screen bg-white">
+        <div class="w-screen flex justify-between items-center 2xl:px-7 min-[540px]:px-3.5 min-[1024px]:px-6">
+            <div class="min-[540px]:w-[16%] min-[1280px]:w-[12.5%] min-[1024px]:w-[15.5%] 2xl:w-[10.5%] flex justify-between items-center" >
+                <div class="flex justify-center items-center hover:scale-105"><i class="cursor-pointer fa-solid fa-bars 2xl:text-[21px] min-[540px]:text-xs min-[1024px]:text-[21px] text-gray-500"></i></div>
+                <div class="flex justify-center items-center">
+                    <i class="cursor-pointer fa-brands fa-youtube min-[540px]:text-base min-[1024px]:text-[27px] 2xl:text-[27px]" style="background-color:white; color:red"></i>
+                    <span class="cursor-pointer text-black font-bold min-[540px]:text-xs min-[1024px]:text-[21px] 2xl:text-[21px]">YouTube</span>
+                </div>
+            </div>
+                <div class="min-[1024px]:w-[52%] 2xl:w-[44%] flex justify-between items-center 2xl:pt-1 min-[540px]:w-[50%] min-[540px]:pt-1 min-[1024px]:pt-1">
+                    <div class="flex w-[93%]">
+                        <input type="text" placeholder="Search" class="min-[540px]:text-xs min-[540px]:px-[5px] min-[540px]:py-[2.5px] min-[540px]:w-[85.5%] min-[1024px]:px-4 min-[1024px]:py-1.5 2xl:px-4 2xl:py-1.5 2xl:text-base min-[1024px]:text-base min-[1024px]:w-[87%] [1280px]:w-[89%] 2xl:w-[89%] bg-white block rounded-l-full border border-solid border-gray-400 text-gray-400">
+                        <button class="block cursor-pointer rounded-r-full min-[540px]:w-[14.5%] min-[1024px]:w-[13%] min-[1024px]:px-4 min-[1024px]:py-1.5 min-[1280px]:w-[11%] 2xl:w-[11%] 2xl:px-4 2xl:py-1.5 border border-solid border-gray-300 bg-gray-100 hover:bg-gray-200"><i class="block 2xl:text-base min-[1024px]:text-base  min-[540px]:text-[11px] fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="flex justify-center items-center rounded-full min-[1024px]:p-2 2xl:p-2 hover:bg-gray-200">
+                        <i class="cursor-pointer fa-solid fa-microphone min-[540px]:text-xs min-[1024px]:text-lg 2xl:text-lg "></i>
+                    </div>
+                </div>
+            <div class="min-[1280px]:w-[12%] min-[1024px]:w-[13%] 2xl:w-[9.5%] flex justify-between items-center">
+                <div class="flex items-center rounded-full p-1 hover:bg-gray-200"><i class="cursor-pointer fa-solid fa-video min-[1024px]:text-xl min-[540px]:text-sm 2xl:text-xl"></i></div>
+                <div class="flex items-center rounded-full p-1 hover:bg-gray-200"><i class="cursor-pointer fa-regular fa-bell min-[1024px]:text-2xl min-[540px]:text-sm 2xl:text-2xl"></i></div>
+                <div class=" w-[24%] flex items-center "><img src="/images/profilpicture.jpg" alt="" class="w-auto"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
