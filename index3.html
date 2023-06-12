@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <title>My Webpage</title>
+</head>
+
+<body class="bg-gray-200">
+  <header class="bg-blue-500 text-white py-4">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <h1 class="text-3xl font-bold">Welcome to My Webpage</h1>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-white font-medium">Home</a></li>
+          <li><a href="#" class="text-white font-medium">About</a></li>
+          <li><a href="#" class="text-white font-medium">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="md:hidden">
+        <button class="focus:outline-none">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+    <aside class="w-full md:w-1/4 bg-gray-100 p-4">
+      <h2 class="text-xl font-bold mb-4">Sidebar</h2>
+      <ul>
+        <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Link 1</a></li>
+        <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Link 2</a></li>
+        <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Link 3</a></li>
+        <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Link 4</a></li>
+      </ul>
+    </aside>
+
+    <main class="flex-1 bg-white p-4">
+      <h2 class="text-2xl font-bold mb-4">Main Content</h2>
+      <p class="mb-6">This is the main content section of the webpage.</p>
+      <p class="mb-6">It can contain various elements such as text, images, and other components.</p>
+      <p>Feel free to customize and add more content here.</p>
+    </main>
+  </div>
+
+  <footer class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto px-4">
+      <p class="text-center">&copy; 2023 My Webpage. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const button = document.querySelector('button');
+    const nav = document.querySelector('nav');
+
+    button.addEventListener('click', () => {
+      nav.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
